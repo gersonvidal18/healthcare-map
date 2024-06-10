@@ -1,0 +1,45 @@
+.ol-popup {
+    position: absolute;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); /* Glassmorphism */
+    /* background-color: white; */
+    backdrop-filter: blur(10px); /* Glassmorphism */
+    -webkit-backdrop-filter: blur(10px); /* Glassmorphism */
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 20px; /* Glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Glassmorphism */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Glassmorphism */
+    bottom: 32px;
+    left: -48.5px;
+    min-width: 280px;
+  }
+  .ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .ol-popup:after {
+    border-top-color: 1px solid rgba(255, 255, 255, 0.18); /* Glassmorphism */;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+  }
+  .ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+  }
+  .ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+  }
+  .ol-popup-closer:after {
+    content: "✖";
+  }
